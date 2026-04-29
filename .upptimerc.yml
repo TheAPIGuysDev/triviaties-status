@@ -6,8 +6,6 @@ sites:
     url: https://triviaties.com/
   - name: Triviaties App
     url: https://app.triviaties.com/
-  - name: BigQuizThing Web
-    url: https://playbigquiz.com/
   - name: Triviaties API (ping)
     url: https://api.triviaties.com/ping/
     expectedStatusCodes: [200]
