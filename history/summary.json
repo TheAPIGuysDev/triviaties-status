@@ -36,24 +36,6 @@
     "dailyMinutesDown": {}
   },
   {
-    "name": "BigQuizThing Web",
-    "url": "https://playbigquiz.com/",
-    "icon": "https://icons.duckduckgo.com/ip3/playbigquiz.com.ico",
-    "slug": "big-quiz-thing-web",
-    "status": "up",
-    "uptime": "100.00%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
-    "time": 394,
-    "timeDay": 394,
-    "timeWeek": 394,
-    "timeMonth": 394,
-    "timeYear": 394,
-    "dailyMinutesDown": {}
-  },
-  {
     "name": "Triviaties API (ping)",
     "url": "https://api.triviaties.com/ping/",
     "icon": "https://icons.duckduckgo.com/ip3/api.triviaties.com.ico",
