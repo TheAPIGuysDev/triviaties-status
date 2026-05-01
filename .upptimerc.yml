@@ -27,13 +27,16 @@ status-website:
           var section = document.createElement('section');
           section.id = 'tt-status-subscribe';
           section.style.cssText = 'max-width:480px;margin:2rem auto 1rem;padding:0 1rem;';
+          // No fixed height on the iframe wrapper or iframe itself —
+          // HighLevel's form_embed.js measures the form's natural
+          // content height (e.g. 565px) and resizes the iframe via
+          // postMessage. A hard-coded height clips the form.
           section.innerHTML =
             '<h3 style="margin-top:0;">Get notified when something breaks</h3>' +
             '<p>Subscribe and we\'ll email you when an incident opens or resolves.</p>' +
-            '<div style="height:360px;">' +
             '<iframe ' +
               'src="https://links.theapiguys.com/widget/form/Z3XpIJyb1M5mpTIcT88j" ' +
-              'style="width:100%;height:100%;border:none;border-radius:4px" ' +
+              'style="width:100%;border:none;border-radius:4px;display:block;" ' +
               'id="inline-Z3XpIJyb1M5mpTIcT88j" ' +
               'data-layout="{\'id\':\'INLINE\'}" ' +
               'data-trigger-type="alwaysShow" data-trigger-value="" ' +
@@ -42,8 +45,7 @@ status-website:
               'data-form-name="TriviaTies Status Updates" data-height="auto" ' +
               'data-layout-iframe-id="inline-Z3XpIJyb1M5mpTIcT88j" ' +
               'data-form-id="Z3XpIJyb1M5mpTIcT88j" ' +
-              'title="Status update subscription"></iframe>' +
-            '</div>';
+              'title="Status update subscription"></iframe>';
           document.body.appendChild(section);
 
           var disclosure = document.createElement('p');
