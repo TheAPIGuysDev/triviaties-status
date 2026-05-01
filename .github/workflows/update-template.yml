@@ -16,8 +16,14 @@
 
 name: Update Template CI
 on:
-  schedule:
-    - cron: "0 0 * * *"
+  # Daily cron intentionally disabled — running update-template wipes
+  # this project's App-token workflow customizations across all
+  # .github/workflows/*.yml files. Re-enable manually when you want to
+  # bump Upptime, and re-apply the App-token customization from
+  # bcc0ffce8 in the same PR. workflow_dispatch is preserved so you
+  # can fire it manually when ready.
+  # schedule:
+  #   - cron: "0 0 * * *"
   repository_dispatch:
     types: [update_template]
   workflow_dispatch:
@@ -26,14 +32,23 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
     steps:
+      - name: Mint tag-ops-bot-app-token  # tag-ops-bot-app-token
+        id: app-token
+        uses: actions/create-github-app-token@v1
+        with:
+          app-id: ${{ secrets.APP_ID }}
+          private-key: ${{ secrets.APP_PRIVATE_KEY }}
+      - name: Export App token as GH_PAT
+        shell: bash
+        run: echo "GH_PAT=${{ steps.app-token.outputs.token }}" >> $GITHUB_ENV
       - name: Checkout
         uses: actions/checkout@v4
         with:
           ref: ${{ github.head_ref }}
-          token: ${{ secrets.GH_PAT || github.token }}
+          token: ${{ env.GH_PAT || github.token }}
       - name: Update template
         uses: upptime/uptime-monitor@master
         with:
           command: "update-template"
         env:
-          GH_PAT: ${{ secrets.GH_PAT || github.token }}
+          GH_PAT: ${{ env.GH_PAT || github.token }}
