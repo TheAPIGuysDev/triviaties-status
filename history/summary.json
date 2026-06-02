@@ -4,18 +4,20 @@
     "url": "https://triviaties.com/",
     "icon": "https://icons.duckduckgo.com/ip3/triviaties.com.ico",
     "slug": "triviaties-web",
-    "status": "up",
-    "uptime": "100.00%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
+    "status": "down",
+    "uptime": "99.98%",
+    "uptimeDay": "99.44%",
+    "uptimeWeek": "99.92%",
+    "uptimeMonth": "99.98%",
+    "uptimeYear": "99.98%",
     "time": 327,
     "timeDay": 403,
     "timeWeek": 358,
     "timeMonth": 337,
     "timeYear": 327,
-    "dailyMinutesDown": {}
+    "dailyMinutesDown": {
+      "2026-06-02": 8
+    }
   },
   {
     "name": "Triviaties App",
@@ -40,35 +42,39 @@
     "url": "https://api.triviaties.com/ping/",
     "icon": "https://icons.duckduckgo.com/ip3/api.triviaties.com.ico",
     "slug": "triviaties-api-ping",
-    "status": "up",
-    "uptime": "100.00%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
+    "status": "down",
+    "uptime": "99.99%",
+    "uptimeDay": "99.63%",
+    "uptimeWeek": "99.95%",
+    "uptimeMonth": "99.99%",
+    "uptimeYear": "99.99%",
     "time": 332,
     "timeDay": 390,
     "timeWeek": 320,
     "timeMonth": 343,
     "timeYear": 332,
-    "dailyMinutesDown": {}
+    "dailyMinutesDown": {
+      "2026-06-02": 5
+    }
   },
   {
     "name": "Triviaties API (readiness)",
     "url": "https://api.triviaties.com/healthz/",
     "icon": "https://icons.duckduckgo.com/ip3/api.triviaties.com.ico",
     "slug": "triviaties-api-readiness",
-    "status": "up",
-    "uptime": "100.00%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
+    "status": "down",
+    "uptime": "99.99%",
+    "uptimeDay": "99.83%",
+    "uptimeWeek": "99.98%",
+    "uptimeMonth": "99.99%",
+    "uptimeYear": "99.99%",
     "time": 113,
     "timeDay": 140,
     "timeWeek": 118,
     "timeMonth": 114,
     "timeYear": 113,
-    "dailyMinutesDown": {}
+    "dailyMinutesDown": {
+      "2026-06-02": 2
+    }
   }
 ]
