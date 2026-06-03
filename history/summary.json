@@ -24,18 +24,20 @@
     "url": "https://app.triviaties.com/",
     "icon": "https://icons.duckduckgo.com/ip3/app.triviaties.com.ico",
     "slug": "triviaties-app",
-    "status": "down",
-    "uptime": "100.00%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
-    "time": 272,
-    "timeDay": 330,
-    "timeWeek": 285,
-    "timeMonth": 276,
-    "timeYear": 272,
-    "dailyMinutesDown": {}
+    "status": "up",
+    "uptime": "99.83%",
+    "uptimeDay": "94.10%",
+    "uptimeWeek": "99.16%",
+    "uptimeMonth": "99.81%",
+    "uptimeYear": "99.83%",
+    "time": 273,
+    "timeDay": 325,
+    "timeWeek": 289,
+    "timeMonth": 278,
+    "timeYear": 273,
+    "dailyMinutesDown": {
+      "2026-06-03": 85
+    }
   },
   {
     "name": "Triviaties API (ping)",
