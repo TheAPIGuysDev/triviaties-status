@@ -10,11 +10,11 @@
     "uptimeWeek": "99.03%",
     "uptimeMonth": "99.78%",
     "uptimeYear": "99.81%",
-    "time": 328,
-    "timeDay": 449,
-    "timeWeek": 340,
-    "timeMonth": 341,
-    "timeYear": 328,
+    "time": 330,
+    "timeDay": 400,
+    "timeWeek": 338,
+    "timeMonth": 347,
+    "timeYear": 330,
     "dailyMinutesDown": {
       "2026-06-02": 98
     }
@@ -25,16 +25,16 @@
     "icon": "https://icons.duckduckgo.com/ip3/app.triviaties.com.ico",
     "slug": "triviaties-app",
     "status": "up",
-    "uptime": "99.22%",
-    "uptimeDay": "83.70%",
+    "uptime": "99.23%",
+    "uptimeDay": "90.92%",
     "uptimeWeek": "96.02%",
     "uptimeMonth": "99.08%",
-    "uptimeYear": "99.22%",
-    "time": 260,
-    "timeDay": 216,
-    "timeWeek": 239,
-    "timeMonth": 260,
-    "timeYear": 260,
+    "uptimeYear": "99.23%",
+    "time": 261,
+    "timeDay": 253,
+    "timeWeek": 245,
+    "timeMonth": 263,
+    "timeYear": 261,
     "dailyMinutesDown": {
       "2026-06-04": 196,
       "2026-06-03": 206
@@ -51,11 +51,11 @@
     "uptimeWeek": "99.06%",
     "uptimeMonth": "99.78%",
     "uptimeYear": "99.82%",
-    "time": 336,
-    "timeDay": 501,
-    "timeWeek": 336,
-    "timeMonth": 348,
-    "timeYear": 336,
+    "time": 337,
+    "timeDay": 363,
+    "timeWeek": 344,
+    "timeMonth": 352,
+    "timeYear": 337,
     "dailyMinutesDown": {
       "2026-06-02": 95
     }
@@ -71,11 +71,11 @@
     "uptimeWeek": "99.09%",
     "uptimeMonth": "99.79%",
     "uptimeYear": "99.82%",
-    "time": 113,
-    "timeDay": 145,
-    "timeWeek": 113,
-    "timeMonth": 115,
-    "timeYear": 113,
+    "time": 114,
+    "timeDay": 147,
+    "timeWeek": 117,
+    "timeMonth": 117,
+    "timeYear": 114,
     "dailyMinutesDown": {
       "2026-06-02": 92
     }
