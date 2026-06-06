@@ -2,16 +2,29 @@ owner: TheAPIGuysDev
 repo: triviaties-status
 
 sites:
+  # X-Healthcheck-Token is substituted from the HEALTHCHECK_TOKEN repo secret
+  # (via SECRETS_CONTEXT in the uptime workflow). The shared CloudFront WAF has a
+  # top-priority Allow rule (header == token AND host ends-with triviaties.com)
+  # that lets the check skip AWSManagedRulesAmazonIpReputationList, which was
+  # intermittently 403-blocking GitHub runner IPs and causing false "down" flapping.
   - name: Triviaties Web
     url: https://triviaties.com/
+    headers:
+      - "X-Healthcheck-Token: $HEALTHCHECK_TOKEN"
   - name: Triviaties App
     url: https://app.triviaties.com/
+    headers:
+      - "X-Healthcheck-Token: $HEALTHCHECK_TOKEN"
   - name: Triviaties API (ping)
     url: https://api.triviaties.com/ping/
     expectedStatusCodes: [200]
+    headers:
+      - "X-Healthcheck-Token: $HEALTHCHECK_TOKEN"
   - name: Triviaties API (readiness)
     url: https://api.triviaties.com/healthz/
     expectedStatusCodes: [200]
+    headers:
+      - "X-Healthcheck-Token: $HEALTHCHECK_TOKEN"
 
 status-website:
   cname: status.triviaties.com
